@@ -2,9 +2,9 @@
 # Overview
 We will examine reviews of Musical instruments dataset from Amazon Vine program.<br>
 [Amazon reviews us Musical Instruments](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Musical_Instruments_v1_00.tsv.gz)<br>
-The dataset has the following schema:<br>
-![Amazon review dataset schema](Resources/amazon-review-datasets-schema.png)
 The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products.<br> Companies subscribe to this service by paying a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.<br>
+All the Vine dataset share a common schema:<br>
+![Amazon review dataset schema](Resources/amazon-review-datasets-schema.png)
 We use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. We then use Pandas to determine if there is any bias towards favorable reviews from Vine members in the dataset.
 
 # Summary
